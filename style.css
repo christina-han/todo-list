@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #1d1d1d;
+    /* min-height: 100vh; */
+}
+input:focus{
+    outline: none;
+}
+button:focus{
+    outline: none;
+}
+
+
+/* 
+.cursor{
+        pointer-events: none;
+        position: fixed;
+        padding: 1rem;
+        background-color: #fff;
+        border-radius: 50%;
+        mix-blend-mode: difference;
+        transition: transform 0.3s ease;
+}  */
+
+
+.divider {
+	width: 100%;
+	height: 1px;
+	background: #fff;
+}
+
+.wrapper{
+    padding:2rem 2rem;
+}
+header{
+ display: flex;
+ /* justify-content: space-around; */
+ /* border-bottom: 1px solid #D8CFBE; */
+
+} 
+
+.site-logo{
+    font-family: "Bigilla" !important;
+    font-style: italic;
+    font-size: 30px;
+    color: #24D9C2;
+    
+}
+h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    color: #D8CFBE;
+    text-align: center;
+}
+span{
+    opacity: 0;
+  
+}
+span.fade{
+    opacity: 1;
+
+}
+
+
+
+form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+form input{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+
+.todo-button{
+    color: #2E54B8;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0.5rem;
+    font-size: 2rem;
+    background: none;
+    border: 1px solid #fff;
+}
+
+.todo-button:hover ~ .cursor{
+    transform: translate(-50%,-50%) scale(2);
+}
+
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 7rem;
+
+}
+.todo-container:hover ~ .cursor{
+    transform: translate(-50%,-50%) scale(2);
+}
+.todo-list{
+    min-width: 44%;
+    list-style: none;
+    margin: 2rem 0;
+    transition: all 0.3s ease;
+}
+.todo{
+    margin: 0.2rem;
+    /* background: white; */
+    border: 1px solid #fff;
+    color: #D1E0F3;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.todo li{
+    flex: 1;
+}
+.trash-btn, .complete-btn{
+    background: #D8CFBE;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s all ease;
+}
+
+.complete-btn{
+    background: #2E54B8;
+}
+
+.todo-item{
+    padding: 0rem 0.5rem;
+}
+
+.fa-check, .fa-trash{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.3;
+}
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+.filter-todo{
+
+    max-width: 55%; 
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  
+ 
+}
+
+
+.filter-todo .filter-btn{
+    font-size: 20px;
+    /* flex: 0 0 33.33%;
+    -ms-flex: 0 0 33.33%;
+    max-width: 33.33%; */
+    background: #1d1d1d;
+    color: #2E54B8;
+    border: none;
+    display: block;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.filter-btn:hover ~ .cursor{
+    transform: translate(-50%,-50%) scale(2);
+}
+.filter-btn:hover{
+    background-color: #1d1d1d;
+    color: #fff;
+    transform: scale(1.5);
+    
+}
+.filter-todo .active{
+    background-color: #1d1d1d;
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* socials */
+
+.socials {
+	padding: 4rem 0 2rem 0;
+}
+
+.socials .socials-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+.socials .socials-id{
+    transition: all 0.3s ease;
+}
+.socials .socials-id:hover{
+    transform: scale(1.3);
+}
+
+.socials .socials-container a {
+	cursor: pointer;
+	text-decoration: none;
+	font-family: "Bigilla" !important;
+	font-size: 30px;
+    color: #24D9C2;
+}
+
+
+
+@media (max-width: 900px) {
+	.socials .socials-container a {
+		font-size: 30px;
+	}
+}
+
+
+/* ipad */
+@media(max-width: 758px){
+   /* .cursor{
+       display: none;
+   } */
+}
+@media(max-width: 900px){
+    nav{
+        top: 30%;
+    }
+    .hover-this{
+        width: 100%;
+        padding: 20px 0;
+        display: inline-block;
+    }
+} 
