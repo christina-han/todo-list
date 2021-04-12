@@ -183,7 +183,7 @@ function complete(){
     clearInterval(timer);
     timer = null;
 }
-//change cursor
+//change cursor optional
   
     // let mouseCursor = document.querySelector(".cursor");
  

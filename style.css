@@ -243,9 +243,7 @@ form input{
 
 /* ipad */
 @media(max-width: 758px){
-   /* .cursor{
-       display: none;
-   } */
+ 
 }
 @media(max-width: 900px){
     nav{
