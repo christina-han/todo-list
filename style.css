@@ -194,8 +194,7 @@ form input{
 .filter-btn:hover{
     background-color: #1d1d1d;
     color: #fff;
-    transform: scale(1.5);
-    
+    transform: scale(1.5);    
 }
 .filter-todo .active{
     background-color: #1d1d1d;
@@ -232,26 +231,45 @@ form input{
     color: #24D9C2;
 }
 
-
+/* ipad */
 
 @media (max-width: 900px) {
 	.socials .socials-container a {
 		font-size: 30px;
 	}
 }
-
-
-/* ipad */
-@media(max-width: 758px){
- 
+@media (max-width: 556px) {
+	.wrapper{
+        padding:2rem 20px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .todo-input{
+        font-size: 1.5rem;
+    }
+    .todo-button{
+        font-size: 1.5rem;
+    }
+    .filter-todo{
+        max-width: unset; 
+        font-size: 25px;
+    }
+    .filter-btn:hover{
+        transform: scale(1.1);    
+    }
+    
+    .todo-container {
+        min-height: 17rem;
+    }
+    .todo-list{
+        min-width: 80%;
+    }
+    .socials .socials-container a{
+        font-size: 24px;
+    }
 }
-@media(max-width: 900px){
-    nav{
-        top: 30%;
-    }
-    .hover-this{
-        width: 100%;
-        padding: 20px 0;
-        display: inline-block;
-    }
-} 
+
+
+
+
